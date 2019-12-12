@@ -146,4 +146,5 @@ for i in range(0,len(query)):
         
     #print(queryList)
 
-print(pan_data_list[0].firstname)
+for x in pan_data_list:
+    print(x.id)
