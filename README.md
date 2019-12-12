@@ -21,3 +21,6 @@ DatabaseHandle
 
 TableHandle 
     It extends the DatabaseHandle.It takes database Object as parameter.
+    Member Function
+     tableList()
+        This gives the list of table present in the database

@@ -69,6 +69,11 @@ class TableHandle(DatabaseHandle):
                 return False
             else:
                 return True
+        
+        def QueryExecute(self,query):
+            self.table.execute(query)
+            return self.table.fetchall()
+            
 
         def tableList(self):
             #List of tables
@@ -84,10 +89,3 @@ class TableHandle(DatabaseHandle):
 
             except Exception as e:
                 print(e)
-
-
-
-dObject = DatabaseHandle()
-print(dObject.databaseList())
-tObject = TableHandle(dObject)
-tObject.tableList()
