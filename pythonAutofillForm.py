@@ -39,7 +39,7 @@ applicantlastname.send_keys(datalistfirst.lastname)
 
 #driver.implicitly_wait(5)
 applicantfirstname = driver.find_element_by_id("applicantfirstname")
-print(datalistfirst.firstname)
+#print(datalistfirst.firstname)
 #firstname.click()
 #Element not intercatable ERRORR
 applicantfirstname.send_keys(datalistfirst.firstname)
@@ -85,7 +85,7 @@ dateofbirth.send_keys(dateofbirthrev)
 #dateofbirthstring=''
 #dateofbirthcombo = dateofbirthstring.join(dateofbirthlist)
 #ActionChains(driver).move_to_element(dateofbirth).click().send_keys(dateofbirthcombo).perform()
-print(dateofbirthrev)
+#print(dateofbirthrev)
 
 fatherlastname = driver.find_element_by_id("fatherlastname")
 fatherlastname.send_keys(datalistfirst.fatherlastname)
